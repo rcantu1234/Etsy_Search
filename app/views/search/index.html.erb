@@ -1,0 +1,30 @@
+<h1>Etsy Search</h1>
+
+<%= form_tag('/', method: 'get') do %>
+  <%= search_field_tag('query') %>
+  <%= submit_tag("Search!") %>
+<% end %>
+
+<ul>
+  <% @items.each do |item| %>
+    <li>
+      <strong><%= item["title"] %></strong>
+      <img src='<%= item["thumbnailImage"] %>' />
+        <div class="price">
+        <strong>Price: $</strong><%= item["price"] %><br>
+        <strong>Category: </strong><%= item["category_id"] %><br>
+        <strong>Description: </strong><%= item["description"] %><br><br>
+
+
+         <!-- if item["msrp"].to_i %> -->
+          <!-- <strong><%- item["saleprice"] %></strong> - was <%= item["msrp"] %> -->
+          <!-- <% if item["saleprice"].to_i < item["msrp"].to_i %> -->
+            <!-- <br><small>Wow! What savings~!</small> -->
+          <!-- #<% end %> -->
+        </div>
+    </li>
+  <% end %>
+</ul>
+
+
+<!-- name, an image, a price, and a category or name of seller. -->
