@@ -1,3 +1,45 @@
 // Place all the styles related to the search controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.etsy {
+  float : right;
+  margin-top: 0.7em;
+  margin-right: 74em;
+  padding-bottom: -1em;
+
+}
+
+.etsy-font-size {
+  font-size: 2em;
+  float: left;
+  margin-bottom: -5em;
+  color: red;
+}
+
+.search-bar {
+   margin-left: 5em;
+}
+
+.home-format {
+  margin-left: 10em;
+  float: left;
+}
+
+.body {
+  background-color: beige;
+}
+
+.ul-format {
+  list-style-type: none;
+  margin-left: 1em;
+  float: right;
+  padding-top: -1em;
+  padding-bottom: 50em;
+}
+
+// .radio-format {
+//   display: block;
+//   float: left;
+//   margin: 0 15px 0 0;
+// }
+
